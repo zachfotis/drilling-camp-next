@@ -6,9 +6,12 @@
     "start": "next start"
   },
   "dependencies": {
+    "easymde": "^2.18.0",
     "next": "latest",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-simplemde-editor": "^5.2.0",
+    "sharp": "^0.31.3"
   },
   "devDependencies": {
     "@types/node": "18.11.3",
