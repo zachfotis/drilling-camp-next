@@ -15,6 +15,7 @@ function ComposePage() {
           className="flex-1 p-2 border-2 border-slate-300 focus:border-primary rounded-md"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
+          autoFocus={true}
         />
       </div>
       <div className="w-full flex justify-start items-center gap-2 mb-10">
@@ -26,7 +27,7 @@ function ComposePage() {
         <button className="w-[150px] bg-slate-300 text-black p-2 rounded-md hover:bg-slate-400 transition duration-300 ease-in-out">
           Save Draft
         </button>
-        <button className="w-[150px] bg-primary text-white p-2 rounded-md hover:bg-secondary transition duration-300 ease-in-out">
+        <button className="w-[150px] bg-accent text-black p-2 rounded-md hover:brightness-75 transition duration-300 ease-in-out">
           Publish
         </button>
       </div>

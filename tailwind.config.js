@@ -13,6 +13,13 @@ module.exports = {
         warning: '#F4A261',
         error: '#E76F51',
       },
+      screens: {
+        mobile: { max: '650px' },
+        tablet: { max: '768px' },
+        laptop: { max: '1050px' },
+        laptopLG: { max: '1200px' },
+        desktop: { max: '1440px' },
+      },
     },
   },
   plugins: [],

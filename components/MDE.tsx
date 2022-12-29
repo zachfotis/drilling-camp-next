@@ -11,7 +11,7 @@ function MDE() {
 
   const options = useMemo(() => {
     return {
-      autofocus: true,
+      autofocus: false,
       spellChecker: true,
     };
   }, []);

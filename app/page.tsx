@@ -1,4 +1,6 @@
+import Hero from '../components/home/Hero';
+
 function page() {
-  return <h1>Home Page</h1>;
+  return <Hero />;
 }
 export default page;
