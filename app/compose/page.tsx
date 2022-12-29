@@ -7,7 +7,7 @@ function ComposePage() {
   const [title, setTitle] = useState('');
 
   return (
-    <div className="flex-1">
+    <div className="w-full max-w-[1280px] mx-auto my-10">
       <div className="w-full flex justify-start items-center gap-2 mb-5">
         <h1 className="w-[100px] font-[500]">Title:</h1>
         <input
