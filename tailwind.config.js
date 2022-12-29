@@ -17,7 +17,7 @@ module.exports = {
         mobile: { max: '650px' },
         tablet: { max: '768px' },
         laptop: { max: '1050px' },
-        laptopLG: { max: '1200px' },
+        laptopLG: { max: '1280px' },
         desktop: { max: '1440px' },
       },
     },

@@ -39,7 +39,7 @@ const routes = [
 
 function Navbar() {
   return (
-    <nav className="w-full bg-primary text-white font-[300] p-5 shadow-lg sticky top-0 antialiased">
+    <nav className="w-full bg-primary text-white font-[300] p-5 shadow-lg fixed top-0 z-50 antialiased">
       <div className="w-full flex justify-between items-center max-w-[1280px] mx-auto">
         <Link href="/" className="flex justify-start items-center gap-5">
           <Image src={LogoImage} alt="Drilling Camp Logo" width={40} height={40} />
