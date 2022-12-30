@@ -1,11 +1,11 @@
 import Hero from '../components/home/Hero';
-import LatestNews from '../components/home/LatestNews';
+import LatestArticles from '../components/home/LatestArticles';
 
 function page() {
   return (
     <>
       <Hero />
-      <LatestNews />
+      <LatestArticles />
     </>
   );
 }

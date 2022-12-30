@@ -19,13 +19,13 @@ function Hero() {
             Drilling Engineer.
           </p>
         </div>
-        <div className="flex justify-start items-center gap-5">
+        <div className="flex justify-start items-center gap-5 mt-5 mb-10">
           <Link
             href="/become-author"
             className="px-5 py-2 bg-accent text-gray-700 rounded-lg shadow-md font-[600] text-lg hover:scale-105
           transition-all duration-300 ease-in-out"
           >
-            Become an author
+            Become an Author
           </Link>
           <Link
             href="/compose"
@@ -35,7 +35,7 @@ function Hero() {
             New Article
           </Link>
         </div>
-        <div className="w-full flex justify-start items-center gap-20 py-5 mt-5 laptop:overflow-x-scroll snap-x">
+        <div className="w-full flex justify-start items-center gap-20 py-5 mb-5 laptop:overflow-x-scroll snap-x">
           <FeatureCard
             key="library"
             title="Academy's Library"
