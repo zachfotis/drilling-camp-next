@@ -1,12 +1,11 @@
 import { ImNewspaper } from 'react-icons/im';
 import NewsThumb from '../NewsThumb';
 import cheerio from 'cheerio';
-import Loader from '../Loader';
 
 const getNews = async () => {
   const newsHeadlinesRequest = await fetch('https://www.rigzone.com/news/industry_headlines/', {
     next: {
-      revalidate: 86400, // 1 day
+      revalidate: 3600, // 1 hour
     },
   });
   const newsHeadlinesResponse = await newsHeadlinesRequest.text();
