@@ -1,29 +1,15 @@
 'use client';
-import Link from 'next/link';
+
 import { useEffect } from 'react';
-import { FcLibrary } from 'react-icons/fc';
-import { RxChevronRight } from 'react-icons/rx';
 import ArticleThumb from '../../../components/ArticleThumb';
 
 function page({ params: { category } }: { params: { category: string } }) {
-  // scroll to top smoothly
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, []);
 
   return (
-    <div className="my-3 flex flex-col justify-start items-start gap-10">
-      <div className="flex justify-start items-center gap-3">
-        <Link href="/library" className="flex justify-start items-center gap-2">
-          <FcLibrary className="inline-block text-xl" />
-        </Link>
-        <RxChevronRight className="inline-block text-xl" />
-        <h1>Articles</h1>
-        <RxChevronRight className="inline-block text-xl" />
-        <Link href={`/library/${category}`}>
-          <h1 className="font-[500]">{category.replace(/-/g, ' ').replace(/\b\w/g, (l) => l.toUpperCase())}</h1>
-        </Link>
-      </div>
+    <>
       <h1 className="text-2xl">
         Articles for{' '}
         <span className="font-[600] border-b-2 border-accent">
@@ -35,7 +21,7 @@ function page({ params: { category } }: { params: { category: string } }) {
           <ArticleThumb key={article.id} article={article} />
         ))}
       </div>
-    </div>
+    </>
   );
 }
 export default page;
